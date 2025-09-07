@@ -33,56 +33,14 @@
     <div class="small-container">
 		<div class="categories">
 		<h2 class="title">Men's Traditional Clothes </h2><br>
-			<div class="row">
-				<div class="col-3">
-					<img src="img/love-1.jpg" alt="habeshan man-1 wearing Traditional cloth">
-					<h4>Men's traditional Cloth</h4>
-					<p>1100 ETB</p>
-					<button <button type="button" class="butn"><a href="signin.html">ORDER</a></button>
-				</div>
-				<div class="col-3">
-					<img src="img/man-2.jpg" alt="habeshan woman wearing Traditional dress">
-					<h4>Men's traditional Cloth</h4>
-					<p>2100 ETB</p>
-					<button <button type="button" class="butn"><a href="signin.html">ORDER</a></button>
-				</div>
-				<div class="col-3">
-					<img src="img/man-3.jpg" alt="habeshan couple wearing Traditional dress">
-					<h4>Men's traditional Cloth</h4>
-					<p>1500 ETB</p>
-					<button <button type="button" class="butn"><a href="signin.html">ORDER</a></button>
-				</div>
-				<div class="col-3">
-					<img src="img/man4.jpg" alt="habeshan man-1 wearing Traditional cloth">
-					<h4>Men's traditional Cloth</h4>
-					<p>800 ETB</p>
-					<button <button type="button" class="butn"><a href="signin.html">ORDER</a></button>
-			        </div>
-                    <div class="col-3">
-                        <img src="img/man-5.jpg" alt="habeshan man-1 wearing Traditional cloth">
-                        <h4>Men's traditional Cloth</h4>
-                        <p>1200 ETB</p>
-                        <button <button type="button" class="butn"><a href="signin.html">ORDER</a></button>
-                    </div>
-                    <div class="col-3">
-                        <img src="img/man-6.jpg" alt="habeshan woman wearing Traditional dress">
-                        <h4>Men's traditional Cloth</h4>
-                        <p>950 ETB</p>
-                        <button <button type="button" class="butn"><a href="signin.html">ORDER</a></button>
-                    </div>
-                    <div class="col-3">
-                        <img src="img/man-7.jpg" alt="habeshan couple wearing Traditional dress">
-                        <h4>Men's traditional Cloth</h4>
-                        <p>1100 ETB</p>
-                        <button <button type="button" class="butn"><a href="signin.html">ORDER</a></button>
-                    </div>
-                    <div class="col-3">
-                        <img src="img/man-8.jpg" alt="habeshan man-1 wearing Traditional cloth">
-                        <h4>Men's traditional Cloth</h4>
-                        <p>1250 ETB</p>
-                        <button <button type="button" class="butn"><a href="signin.html">ORDER</a></button>
-                        </div>
-		     </div>
+			<form class="product-search-form">
+				<input type="text" id="search-q" placeholder="Search products">
+				<input type="number" id="min-price" placeholder="Min price" step="0.01">
+				<input type="number" id="max-price" placeholder="Max price" step="0.01">
+				<button type="submit" class="butn">Search</button>
+			</form>
+			<div class="row" id="products-container" data-category="men"></div>
+	     </div>
     
 
              <div class="footer">
@@ -103,5 +61,6 @@
                 </div>
             </div>
     <script src="js/forms.js"></script>
+    <script src="js/storefront.js"></script>
  </body>
 </html> 
