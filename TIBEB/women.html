@@ -32,107 +32,14 @@
 
         <div class="small-container">
 		<div class="categories">
-		<h2 class="title">ZURYA </h2><br>
-			<div class="row">
-				<div class="col-3">
-					<img src="img/zurya-1.jpg" alt="habeshan man-1 wearing Traditional cloth">
-					<h4>ZURYA</h4>
-					<p>3200 ETB</p>
-					<button <button type="button" class="butn"><a href="signin.html">ORDER</a></button>
-				</div>
-				<div class="col-3">
-					<img src="img/zurya-2.jpg" alt="habeshan woman wearing Traditional dress">
-					<h4>ZURYA</h4>
-					<p>4500 ETB</p>
-					<button <button type="button" class="butn"><a href="signin.html">ORDER</a></button>
-				</div>
-				<div class="col-3">
-					<img src="img/zurya-3.jpg" alt="habeshan couple wearing Traditional dress">
-					<h4>ZURYA</h4>
-					<p>3900 ETB</p>
-					<button <button type="button" class="butn"><a href="signin.html">ORDER</a></button>
-				</div>
-				<div class="col-3">
-					<img src="img/zurya-4.jpg" alt="habeshan man-1 wearing Traditional cloth">
-					<h4>ZURYA</h4>
-					<p>5000 ETB</p>
-					<button <button type="button" class="butn"><a href="signin.html">ORDER</a></button>
-			        </div>
-                    <div class="col-3">
-                        <img src="img/zurya-5.jpg" alt="habeshan man-1 wearing Traditional cloth">
-                        <h4>ZURYA</h4>
-                        <p>2990 ETB</p>
-                        <button <button type="button" class="butn"><a href="signin.html">ORDER</a></button>
-                    </div>
-                    <div class="col-3">
-                        <img src="img/zurya-6.jpg" alt="habeshan woman wearing Traditional dress">
-                        <h4>ZURYA</h4>
-                        <p>2750 ETB</p>
-                        <button <button type="button" class="butn"><a href="signin.html">ORDER</a></button>
-                    </div>
-                    <div class="col-3">
-                        <img src="img/zurya-7.jpg" alt="habeshan couple wearing Traditional dress">
-                        <h4>ZURYA</h4>
-                        <p>4200 ETB</p>
-                        <button <button type="button" class="butn"><a href="signin.html">ORDER</a></button>
-                    </div>
-                    <div class="col-3">
-                        <img src="img/zurya-8.jpg" alt="habeshan man-1 wearing Traditional cloth">
-                        <h4>ZURYA</h4>
-                        <p>4750 ETB</p>
-                        <button <button type="button" class="butn"><a href="signin.html">ORDER</a></button>
-                        </div>
-		     </div>
-		<h2 class="title">SHIFON </h2><br>
-		<div class="row">
-			<div class="col-3">
-					<img src="img/shifon-1.jpg" alt="habeshan man-1 wearing Traditional cloth">
-					<h4>SHIFON</h4>
-					<p>2000 ETB</p>
-					<button <button type="button" class="butn" ><a href="signin.html">ORDER</a></button>
-				</div>
-				<div class="col-3">
-					<img src="img/shifon-2.jpg" alt="habeshan woman wearing Traditional dress">
-					<h4>SHIFON</h4>
-					<p>2100 ETB</p>
-					<button <button type="button" class="butn"><a href="signin.html">ORDER</a></button>
-				</div>
-				<div class="col-3">
-					<img src="img/shifon-3.jpg" alt="habeshan couple wearing Traditional dress">
-					<h4>SHIFON</h4>
-					<p>2200 ETB/piece</p>
-					<button <button type="button" class="butn"><a href="signin.html">ORDER</a></button>
-				</div>
-				<div class="col-3">
-					<img src="img/shifon-4.jpg" alt="habeshan woman wearing Traditional cloth">
-					<h4>SHIFON</h4>
-					<p>2300 ETB</p>
-					<button <button type="button" class="butn"><a href="signin.html">ORDER</a></button>
-			       </div>
-				<div class="col-3">
-					<img src="img/shifon-5.jpg" alt="habeshan man-1 wearing Traditional cloth">
-					<h4>SHIFON</h4>
-					<p>2400 ETB</p>
-					<button <button type="button" class="butn"><a href="signin.html">ORDER</a></button>
-				</div>
-				<div class="col-3">
-					<img src="img/shifon-6.jpg" alt="habeshan woman wearing Traditional dress">
-					<h4>SHIFON</h4>
-					<p>2500 ETB</p>
-					<button <button type="button" class="butn"><a href="signin.html">ORDER</a></button>
-				</div>
-				<div class="col-3">
-					<img src="img/shifon-7.jpg" alt="habeshan couple wearing Traditional dress">
-					<h4>SHIFON</h4>
-					<p>2600 ETB</p>
-					<button <button type="button" class="butn"><a href="signin.html">ORDER</a></button>
-				</div>
-				<div class="col-3">
-					<img src="img/shifon-8.jpg" alt="habeshan man-1 wearing Traditional cloth">
-					<h4>SHIFON</h4>
-					<p>2700 ETB</p>
-					<button <button type="button" class="butn"><a href="signin.html">ORDER</a></button>
-			       </div>
+		<h2 class="title">Women's Clothes</h2><br>
+			<form class="product-search-form">
+				<input type="text" id="search-q" placeholder="Search products">
+				<input type="number" id="min-price" placeholder="Min price" step="0.01">
+				<input type="number" id="max-price" placeholder="Max price" step="0.01">
+				<button type="submit" class="butn">Search</button>
+			</form>
+			<div class="row" id="products-container" data-category="women"></div>
 		</div>
 	</div>
 	
@@ -161,5 +68,6 @@
 		    </div>
     </div>
     <script src="js/forms.js"></script>
+    <script src="js/storefront.js"></script>
  </body>
 </html> 
